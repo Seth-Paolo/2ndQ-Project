@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Notes</title>
+    <link rel="stylesheet" href="../css/Note.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Iconscout Link For Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  </head>
+  <body>
+	<span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="About.html">About</a>
+				<a href="Calendar.html">Calendar</a>	
+				<a href="../index.html">Home</a>	
+		</div>
+		
+		<div id="main">
+			<div class="popup-box">
+      <div class="popup">
+        <div class="content">
+          <header>
+            <p></p>
+            <i class="uil uil-times"></i>
+          </header>
+          <form action="#">
+            <div class="row title">
+              <label>Title</label>
+              <input type="text" spellcheck="false">
+            </div>
+            <div class="row description">
+              <label>Description</label>
+              <textarea spellcheck="false"></textarea>
+            </div>
+            <button></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <li class="add-box">
+        <div class="icon"><i class="uil uil-plus"></i></div>
+        <p>Add new note</p>
+      </li>
+    </div>
+    <script src="script.js"></script>
+		</div>
+
+		<script>
+			function openNav() {
+			  document.getElementById("mySidenav").style.width = "250px";
+			  document.getElementById("main").style.marginLeft = "250px";
+			}
+
+			function closeNav() {
+			  document.getElementById("mySidenav").style.width = "0";
+			  document.getElementById("main").style.marginLeft= "0";
+			}
+		</script>
+  </body>
+</html>
